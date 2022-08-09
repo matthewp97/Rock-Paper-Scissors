@@ -35,13 +35,19 @@ function getResult() {
         result = "You win!"
     }
     if (computerChoice === 'Rock' && userChoice === 'Scissors') {
-        result = "You lose"
+        result = "You lose!"
     }
     if (computerChoice === 'Paper' && userChoice === 'Scissors') {
         result = "You win!"
     }
-    if (computerChoice === 'Scissors' && userChoice === 'paper') {
+    if (computerChoice === 'Paper' && userChoice === 'Rock') {
         result = "You lose!"
+    }
+    if (computerChoice === 'Scissors' && userChoice === 'Paper') {
+        result = "You lose!"
+    }
+    if (computerChoice === 'Scissors' && userChoice === 'Rock') {
+        result = "You win!"
     }
     reusltDisplay.innerHTML = result
 }
